@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 import FindAPet from './FindAPet'
 import Home from './Home'
 import About from './About'
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <>
         <h1>The Pet Adoption Service</h1>
+        <Navbar />
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
