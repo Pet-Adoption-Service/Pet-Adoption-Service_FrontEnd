@@ -17,7 +17,7 @@ class NavBarUIMenu extends Component {
                       <Link to="./FindAPet">Find A Pet</Link>
                     </a>
                     <a href="./Contact" className="item">
-                      Contact
+                      <Link to="./Contact">Contact</Link>
                     </a>
                     <a href="./FAQ" className="item"> 
                       FAQ

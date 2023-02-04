@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import FindAPet from './components/FindAPet'
+import Contact from './components/Contact'
 import NotFound from './components/Error'
 
 function App(){
@@ -14,6 +15,7 @@ function App(){
           <Route exact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/findapet" element={<FindAPet />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </>    
