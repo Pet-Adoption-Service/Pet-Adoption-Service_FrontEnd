@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 class NavBarUIMenu extends Component {
     render() {
         return (
-            <div className="ui container">
-                <h1 style={{ color: 'green' }}>The Pet Adoption Service</h1>
+            <div className="ui-container">
+                <h2 style={{ color: 'green' }}>The Pet Adoption Service</h2>
                 <div className="ui secondary menu">
                     <a href="./home" className="item active">
-                      <h4>Home</h4>
+                      <Link to="/home">Home</Link>
                     </a>
                     <a href="./about" className="item">
-                      <h4>About</h4>
+                     <Link to="./About">About</Link>
                     </a>
                     <a href="./FindAPet" className="item">
-                      <h4>Find A Pet</h4>
+                      Find A Pet
                     </a>
                     <a href="./Contact" className="item">
-                      <h4>Contact</h4>
+                      Contact
                     </a>
                     <a href="./FAQ" className="item"> 
-                      <h4>FAQ</h4>
+                      FAQ
                     </a>
                 </div>
             </div>

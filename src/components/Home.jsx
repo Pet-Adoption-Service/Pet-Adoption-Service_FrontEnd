@@ -1,13 +1,14 @@
 import React from 'react'
+import '/index.css'
 
-const CatDogGrass = new URL("./images/CatDogGrass.jpg", import.meta.url)
+const catdoggrass = new URL("./images/CatDogGrass.jpg", import.meta.url)
 
 function Home(){
+
   return <>
-  <h1>Welcome Home!</h1>
-    <section className="main-container">
+    <section className="main-container"> 
       <div className="cat-dog-grass">
-      <img src={CatDogGrass} />
+      <img src={catdoggrass} />
         </div>
       </section>
       </>

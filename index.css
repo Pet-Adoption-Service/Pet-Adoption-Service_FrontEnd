@@ -1,0 +1,36 @@
+*{
+    margin: 0 auto; 
+    padding: 0 auto;
+    font-family: Courgette;
+    font-size: medium;
+    background-color: #e4dbc9;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.catdog {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container, .main-container2 {
+    max-width: 70%;
+    max-height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ui-container {
+    display: flex;
+    flex-direction: column;
+}
+
