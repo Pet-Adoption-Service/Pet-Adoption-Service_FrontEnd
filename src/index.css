@@ -1,9 +1,9 @@
 body {
     background-color: #e4dbc9;
     font-family: Courgette;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 1.5em;
-    color: #5e5d5f;
+    color: #3f3e3f;
     display: flex;
-    flex-direction: row;
+    flex-direction: center;
 }
