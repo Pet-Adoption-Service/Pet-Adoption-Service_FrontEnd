@@ -3,23 +3,22 @@ class NavBarUIMenu extends Component {
     render() {
         return (
             <div className="ui container">
-                <h2 style={{ color: 'green' }}>The Pet Adoption Service</h2>
-                <h3>Become a pet owner today!</h3>
+                <h1 style={{ color: 'green' }}>The Pet Adoption Service</h1>
                 <div className="ui secondary menu">
                     <a href="./home" className="item active">
-                        Home
+                      <h4>Home</h4>
                     </a>
                     <a href="./about" className="item">
-                        About
+                      <h4>About</h4>
                     </a>
                     <a href="./FindAPet" className="item">
-                        Find A Pet
+                      <h4>Find A Pet</h4>
                     </a>
                     <a href="./Contact" className="item">
-                        Contact
+                      <h4>Contact</h4>
                     </a>
                     <a href="./FAQ" className="item"> 
-                        FAQ 
+                      <h4>FAQ</h4>
                     </a>
                 </div>
             </div>
