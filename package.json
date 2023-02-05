@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode=production",
     "preview": "vite preview",
-    "start": "vite preview"
+    "start": "vite preview --host"
   },
   "dependencies": {
     "react": "^18.2.0",
