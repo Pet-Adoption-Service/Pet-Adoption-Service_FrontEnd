@@ -1,35 +1,71 @@
 import React from 'react'
-import '/index.css'
+import '/FindAPet.css'
+
+const kitty1 = new URL("./images/kitty1.jpg", import.meta.url)
+const kitty2 = new URL("./images/kitty2.jpg", import.meta.url)
+const Puppy1 = new URL("./images/Puppy1.jpg", import.meta.url)
+const adult1 = new URL("./images/adult1.jpg", import.meta.url)
+const adult2 = new URL("./images/adult2.jpg", import.meta.url)
 
 const FindAPet = ({pets}) => {
-  return <>
+
+return <>
     <section className="pet-card">
-    <div class="row my-3 align-items-center justify-content-center p-0 auto m- 0 auto">
-        <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card">
-              {/* {pets.map((pet, index) => (
-                <p key={index}>
-                 <Link to ={`pet/${index}`}>{pet.name}</Link>
-                 </p>
-                ))} */}
-                <img src="http://placekitten.com/100" class="img-thumbnail" alt="Pet Image" />
-                <div class="card-body text-center py-4">
-                    <h5>(Pet Name)</h5>
-                    <p>(Pet Info)</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item ">Breed</li>
-                    <li class="list-group-item">Age</li>
-                    <li class="list-group-item">Size</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="btn btn-info">Book A Visit!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    </>
-}
+        <div className="container">
+            <div className="row">
+                <div className="col-4">
+                    <img className="kitty1" src={kitty1}/>
+                        <h5>Pet Name:</h5>
+                        <p>Description:</p>
+                        <p>Breed:</p>
+                        <p>Age:</p>
+                        <p>Size:</p>
+                        </div>
+                <div className="col-4">
+                    <img className="kitty2" src={kitty2}/>
+                        <h5>Pet Name:</h5>
+                        <p>Description:</p>
+                        <p>Breed:</p>
+                        <p>Age:</p>
+                        <p>Size:</p>
+                        </div>
+                <div className="col-4">
+                    <img className="Puppy1" src={Puppy1}/>
+                        <h5>Pet Name: </h5>
+                        <p>Description:</p>
+                        <p>Breed:</p>
+                        <p>Age:</p>
+                        <p>Size:</p>
+                        </div>
+                <div className="col-4">
+                    <img className="adult1" src={adult1}/>
+                        <h5>Pet Name:</h5>
+                        <p>Description:</p>
+                        <p>Breed:</p>
+                        <p>Age:</p>
+                        <p>Size:</p>
+                        </div>
+                <div className="col-4">
+                    <img className="adult2" src={adult2}/>
+                        <h5>Pet Name:</h5>
+                        <p>Description:</p>
+                        <p>Breed:</p>
+                        <p>Age:</p>
+                        <p>Size:</p>
+                        </div>            
+                <div className="button">
+                    <button type="Book a Visit!" style={{marginBottom: '10px'}}>
+                        Book A Visit!
+                    </button>
+                    </div>
+                    </div>
+                    </div>
+                    <div className="footer">
+                        <h5>&copy;The Pet Adoption Service, 2023</h5>
+                        </div>
+                </section>
+            </>
+};
 
 export default FindAPet;
+
