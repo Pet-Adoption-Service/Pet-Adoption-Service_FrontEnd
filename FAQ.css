@@ -1,14 +1,12 @@
 .main-container4, footer  {
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
     margin: 0 auto;
     padding: 0 auto;
     font-weight: bold;
     text-align: center;
     font-size: small;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -20,8 +18,12 @@ p {
     text-align: center;
 }
 
-img {
+.pets, .pets2 {
     width: 50%;
-    border-radius: 55rem;
+    border-radius: 20rem;
 }
 
+.footer {
+    text-align: center;
+    font-size: small;
+}

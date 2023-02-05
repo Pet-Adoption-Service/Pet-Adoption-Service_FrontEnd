@@ -8,7 +8,8 @@
     font-weight: light;
 }
 
-img {
-    max-width: 68%;
+.catdog {
+    max-width: 70%;
+    border-radius: 20rem;
     align-items: center;
 }

@@ -16,7 +16,7 @@ function About(){
       <p>Best regards,The Pet Adoption Service Team</p>
 
     <div className="catdog">
-    <img src={pets3} />
+    <img className="catdog" src={pets3} />
       </div>
       <div className="footer">
           <h5>&copy;The Pet Adoption Service, 2023</h5>

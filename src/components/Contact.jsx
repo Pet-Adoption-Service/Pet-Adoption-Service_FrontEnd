@@ -18,9 +18,7 @@ const Form = () => {
   return (
     <section className="main-container3">
       <h1>Contact Us</h1>
-      <div className="pets4">
-        <img src={pets4} />
-      </div>
+     
       <form className='form-container'>
     <form onSubmit={handleSubmit}>
       <div>
@@ -58,7 +56,10 @@ const Form = () => {
       </div>
       <button type="submit" style={{ marginTop: '10px' }}>
         Submit
-      </button>
+      </button> 
+      <div className="pets4">
+        <img className="pets4" src={pets4} />
+      </div>
     </form>
     </form>
     <div className="footer">
