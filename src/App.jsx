@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -7,7 +7,40 @@ import FindAPet from './components/FindAPet'
 import Contact from './components/Contact'
 import NotFound from './components/Error'
 
-function App(){
+const App =() => {
+
+useEffect(() => {
+  async function getPets(){
+    const res = await fetch("https://pet-adopt-api-production.up.railway.app/pets")
+    const data = await res.json()
+    dispatchEvent({
+      type: 'setPets',
+      pets: data,
+    })
+    
+  }
+  getPets()
+}, [])
+
+useEffect(() => {
+  async function getBookings(){
+    const res = await fetch("https://pet-adopt-api-production.up.railway.app/bookings")
+    const data = await res.json()
+    dispatchEvent({
+      type: 'setBookings',
+      pets: data,
+    })
+    
+  }
+  getBookings()
+}, [])
+
+const addBooking = async (petName, name, date, contactInfo) => {
+  
+
+
+
+}
 
   return <>
       <Navbar />
