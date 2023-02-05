@@ -61,6 +61,9 @@ const Form = () => {
       </button>
     </form>
     </form>
+    <div className="footer">
+          <h5>&copy;The Pet Adoption Service, 2023</h5>
+        </div>
     </section>
   );
 };

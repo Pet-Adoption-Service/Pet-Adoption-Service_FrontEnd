@@ -5,7 +5,7 @@ class NavBarUIMenu extends Component {
     render() {
         return (
             <div className="ui-container">
-                <h2 style={{ color: 'green' }}>The Pet Adoption Service</h2>
+                <h1 style={{ color: 'green' }}>The Pet Adoption Service</h1>
                 <div className="ui secondary menu">
                     <a href="./home" className="item active">
                       <Link to="/home">Home</Link>
@@ -20,7 +20,7 @@ class NavBarUIMenu extends Component {
                       <Link to="./Contact">Contact</Link>
                     </a>
                     <a href="./FAQ" className="item"> 
-                      FAQ
+                      <Link to="./FAQ">FAQ</Link>
                     </a>
                 </div>
             </div>

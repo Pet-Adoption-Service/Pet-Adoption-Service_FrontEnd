@@ -1,4 +1,4 @@
-.form-container {
+.main-container3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,4 +6,6 @@
     padding: 0 auto;
     margin: 0 auto;
     text-align: center;
+    text-size-adjust: auto;
+    font-size: medium;
 }

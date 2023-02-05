@@ -1,10 +1,14 @@
-.main-container, .main-container2, .main-container3 {
-    max-width: 100%;
-    max-height: 100%;
+.main-container2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;   
+    text-align: center;
+    font-weight: light;
+}
+
+img {
+    max-width: 68%;
+    align-items: center;
 }

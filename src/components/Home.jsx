@@ -1,5 +1,5 @@
 import React from 'react'
-import '/index.css'
+import '/Home.css'
 
 const catdoggrass = new URL("./images/CatDogGrass.jpg", import.meta.url)
 
@@ -9,6 +9,9 @@ function Home(){
     <section className="main-container"> 
       <div className="cat-dog-grass">
       <img src={catdoggrass} />
+        </div>
+        <div className="footer">
+          <h5>&copy;The Pet Adoption Service, 2023</h5>
         </div>
       </section>
       </>

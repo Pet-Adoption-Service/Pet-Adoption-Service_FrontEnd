@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import FindAPet from './components/FindAPet'
 import Contact from './components/Contact'
+import FAQ from './components/FAQ'
 import NotFound from './components/Error'
 
 const App =() => {
@@ -49,6 +50,7 @@ const addBooking = async (petName, name, date, contactInfo) => {
           <Route path="/about" element={<About />} />
           <Route path="/findapet" element={<FindAPet />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </>    

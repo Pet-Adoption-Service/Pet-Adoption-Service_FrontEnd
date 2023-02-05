@@ -1,0 +1,6 @@
+.main-container {
+    max-width: 73%;
+    display: flex;
+    padding: 0 auto;
+    margin: 0 auto;
+}
