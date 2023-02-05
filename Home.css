@@ -4,3 +4,12 @@
     padding: 0 auto;
     margin: 0 auto;
 }
+
+.grass {
+    max-width: 95%;
+    border-radius: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

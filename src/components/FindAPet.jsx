@@ -1,11 +1,10 @@
 import React from 'react'
 import '/index.css'
-import { Link } from 'react-router-dom'
 
 const FindAPet = ({pets}) => {
   return <>
     <section className="pet-card">
-    <div class="row my-3 align-items-center justify-content-center p-auto m-auto">
+    <div class="row my-3 align-items-center justify-content-center p-0 auto m- 0 auto">
         <div class="col-8 col-lg-4 col-xl-3">
             <div class="card">
               {/* {pets.map((pet, index) => (

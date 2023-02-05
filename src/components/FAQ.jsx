@@ -23,8 +23,8 @@ const FAQ = () => {
     </section>
 
     <div className='pets'>
-      <img src={kittens} />
-      <img src={saddog} />
+      <img className='pets'src={kittens} />
+      <img className='pets2'src={saddog} />
     </div>
     <div className="footer">
           <h5>&copy;The Pet Adoption Service, 2023</h5>
