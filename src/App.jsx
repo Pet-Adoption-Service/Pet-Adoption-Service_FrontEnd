@@ -63,7 +63,7 @@ const addBooking = async (petName, name, date, contactInfo) => {
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/findapet" element={<FindAPet pets={pets} bookings={bookings} />} />
+          <Route path="/findapet" element={<FindAPet pets={pets} addBooking={addBooking} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />

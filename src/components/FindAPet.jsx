@@ -23,7 +23,7 @@ const adult2 = new URL("./images/adult2.jpg", import.meta.url)
 // 5. window alert displays success or failure message
 
 
-const FindAPet = ({pets}) => {
+const FindAPet = ({ pets, addBooking }) => {
 
 return <>
     <section className="pet-card">
