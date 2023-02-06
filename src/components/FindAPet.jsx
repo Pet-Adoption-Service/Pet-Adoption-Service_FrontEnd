@@ -15,7 +15,7 @@ return <>
         <div className="container">
             <div className="row">
                 <div className="col-4">
-                    <img className="kitty1" src={kitty1}/>
+                    <img className="kitty1" src={pets[0].profile_image}/>
                         <h5> {pets[0].name}</h5>
                         <p>Description: {pets[0].about}</p>
                         <p>Breed: {pets[0].breed} </p>
@@ -23,7 +23,7 @@ return <>
                         <p>Type: {pets[0].type}</p>
                         </div>
                 <div className="col-4">
-                    <img className="kitty2" src={kitty2}/>
+                    <img className="kitty2" src={pets[1].profile_image}/>
                         <h5>{pets[1].name}</h5>
                         <p>Description: {pets[1].about}</p>
                         <p>Breed: {pets[1].breed} </p>
@@ -31,7 +31,7 @@ return <>
                         <p>Type: {pets[1].type}</p>
                         </div>
                 <div className="col-4">
-                    <img className="Puppy1" src={Puppy1}/>
+                    <img className="Puppy1" src={pets[2].profile_image}/>
                         <h5>{pets[2].name}</h5>
                         <p>Description: {pets[2].about}</p>
                         <p>Breed: {pets[2].breed} </p>
@@ -39,7 +39,7 @@ return <>
                         <p>Type: {pets[2].type}</p>
                         </div>
                 <div className="col-4">
-                    <img className="adult1" src={adult1}/>
+                    <img className="adult1" src={pets[3].profile_image}/>
                         <h5>{pets[3].name}</h5>
                         <p>Description: {pets[3].about}</p>
                         <p>Breed: {pets[3].breed} </p>
@@ -47,7 +47,7 @@ return <>
                         <p>Type: {pets[3].type}</p>
                         </div>
                 <div className="col-4">
-                    <img className="adult2" src={adult2}/>
+                    <img className="adult2" src={pets[4].profile_image}/>
                         <h5>{pets[4].name}</h5>
                         <p>Description: {pets[4].about}</p>
                         <p>Breed: {pets[4].breed} </p>
