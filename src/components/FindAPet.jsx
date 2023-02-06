@@ -65,7 +65,7 @@ return <>
                                                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="date" class="form-label">Peferred Date of Visit</label>
+                                                    <label for="date" class="form-label">Preferred Date of Visit</label>
                                                     <input type="date" class="form-control" id="date" value={data.date}/>
                                                 </div>
                                             </form>
@@ -116,7 +116,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title2 fs-5" id="bookingModalLabel">Visit Tifa!</h1>
+                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit Tifa!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -131,7 +131,7 @@ return <>
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Peferred Date of Visit</label>
+                                            <label for="date" class="form-label">Preferred Date of Visit</label>
                                             <input type="date" class="form-control" id="date" />
                                         </div>
                                         </form>
@@ -149,7 +149,7 @@ return <>
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalToggle">Visit {pets[1].name}!</h1>
+                                            <h1 class="modal-title fs-5" id="modalToggle">Booking Confirmed!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -182,7 +182,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title3 fs-5" id="bookingModalLabel">Visit Cid!</h1>
+                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit Cid!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -197,7 +197,7 @@ return <>
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Peferred Date of Visit</label>
+                                            <label for="date" class="form-label">Preferred Date of Visit</label>
                                             <input type="date" class="form-control" id="date" />
                                         </div>
                                         </form>
@@ -215,7 +215,7 @@ return <>
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalToggle">Visit {pets[2].name}!</h1>
+                                            <h1 class="modal-title fs-5" id="modalToggle">Booking Confirmed!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -248,7 +248,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title4 fs-5" id="bookingModalLabel">Visit Barrett!</h1>
+                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit Barrett!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -263,7 +263,7 @@ return <>
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Peferred Date of Visit</label>
+                                            <label for="date" class="form-label">Preferred Date of Visit</label>
                                             <input type="date" class="form-control" id="date" />
                                         </div>
                                         </form>
@@ -281,7 +281,7 @@ return <>
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalToggle">Visit {pets[3].name}!</h1>
+                                            <h1 class="modal-title fs-5" id="modalToggle">Booking Confirmed!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -314,7 +314,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title5 fs-5" id="bookingModalLabel2">Visit Red V!</h1>
+                                            <h1 class="modal-title fs-5" id="bookingModalLabel2">Visit Red V!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -329,7 +329,7 @@ return <>
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Peferred Date of Visit</label>
+                                            <label for="date" class="form-label">Preferred Date of Visit</label>
                                             <input type="date" class="form-control" id="date" />
                                         </div>
                                         </form>
@@ -347,7 +347,7 @@ return <>
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalToggle">Visit {pets[4].name}!</h1>
+                                            <h1 class="modal-title fs-5" id="modalToggle">Booking Confirmed!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
