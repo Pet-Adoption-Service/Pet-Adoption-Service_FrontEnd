@@ -37,7 +37,24 @@ useEffect(() => {
 
 const addBooking = async (petName, name, date, contactInfo) => { 
   const id = bookings.length
+  const newBooking = {
+    petName: petName ,
+    name: name,
+    date: date,
+    contactInfo: contactInfo
+  }
 
+  const returnedBooking = await fetch("https://pet-adopt-api-production.up.railway.app/bookings", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newBooking)
+  })
+  const data = await returnedBooking.json()
+  setBookings([...bookings, data])
+  nav(`/bookings/${id}`)
 
 }
 
@@ -46,7 +63,7 @@ const addBooking = async (petName, name, date, contactInfo) => {
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/findapet" element={<FindAPet pets={pets} />} />
+          <Route path="/findapet" element={<FindAPet pets={pets} bookings={bookings} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />
