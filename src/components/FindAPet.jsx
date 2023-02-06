@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '/FindAPet.css'
 
 const kitty1 = new URL("./images/kitty1.jpg", import.meta.url)
@@ -8,22 +8,27 @@ const adult1 = new URL("./images/adult1.jpg", import.meta.url)
 const adult2 = new URL("./images/adult2.jpg", import.meta.url)
 
 
-// User workflow
-// 1. user clicks booking button
-// 2. modal window with available time pops up
-// 3. user fills out form fields
-// 4. user clicks submit
-// 5. popup success dialog
-
-// Component Workflow
-// 1. user clicks booking button and front end renders a modal window
-// 2. modal window contains empty form for the create booking fields
-// 3. submit button sends a post request to the create booking endpoint
-// 4. modal disappears
-// 5. window alert displays success or failure message
-
-
 const FindAPet = ({ pets, addBooking }) => {
+
+    sessionStorage.clear()
+
+    const [data,setData] = useState({
+        name: "",
+        email: "",
+        date: ""
+    })
+
+    const changeHandler = e => {
+        const userDetails = {[e.target.name]:[e.target.value]}
+
+        setData({...data, [e.target.name]:[e.target.value]})
+        }  
+
+    const submitHandler = e => {
+        e.preventDefault()
+        addBooking(data.pets[0], data.name[0], data.email[0], data.date[0])
+    }
+
 
 return <>
     <section className="pet-card">
@@ -49,25 +54,25 @@ return <>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                        <form>
-                                        <div class="mb-3">
-                                            <label for="userEmail" class="form-label">Name</label>
-                                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" />
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="userEmail" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" />
-                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="date" class="form-label">Peferred Date of Visit</label>
-                                            <input type="date" class="form-control" id="date" />
-                                        </div>
-                                        </form>
+                                            <form onSubmit={submitHandler}>
+                                                <div class="mb-3">
+                                                    <label for="name" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" value={data.name}/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="userEmail" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" value={data.email}/>
+                                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="date" class="form-label">Peferred Date of Visit</label>
+                                                    <input type="date" class="form-control" id="date" value={data.date}/>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" data-bs-target="#bookingsuccess" data-bs-toggle="modal">Make Booking</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" data-bs-target="#bookingsuccess" data-bs-toggle="modal">Make Booking</button>
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +83,7 @@ return <>
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="modalToggle">Visit {pets[0].name}!</h1>
+                                            <h1 class="modal-title fs-5" id="modalToggle">Booking Confirmed!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -367,7 +372,7 @@ return <>
         </div>
     </section>
 </>
-};
+}
 
 export default FindAPet
 
