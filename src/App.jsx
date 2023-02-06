@@ -35,7 +35,7 @@ useEffect(() => {
   getBookings()   
 }, [])
 
-const addBooking = async (petName, name, date, contactInfo) => {
+const addBooking = async (petName, name, date, contactInfo) => { 
   const id = bookings.length
 
 
