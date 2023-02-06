@@ -1,4 +1,4 @@
-.main-container4, footer  {
+.main-container4  {
     flex-direction: column;
     margin: 0 auto;
     padding: 0 auto;
@@ -18,8 +18,12 @@ p {
     text-align: center;
 }
 
-.pets, .pets2 {
-    width: 50%;
+.pets {
+    width: 55%;
+    border-radius: 20rem;
+}
+.pets2 {
+    width: 40%;
     border-radius: 20rem;
 }
 
