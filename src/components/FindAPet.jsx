@@ -17,42 +17,42 @@ return <>
                 <div className="col-4">
                     <img className="kitty1" src={kitty1}/>
                         <h5> {pets[0].name}</h5>
-                        <p>Description:</p>
-                        <p>Breed:</p>
-                        <p>Age:</p>
-                        <p>Size:</p>
+                        <p>Description: {pets[0].about}</p>
+                        <p>Breed: {pets[0].breed} </p>
+                        <p>Age: {pets[0].age}</p>
+                        <p>Type: {pets[0].type}</p>
                         </div>
                 <div className="col-4">
                     <img className="kitty2" src={kitty2}/>
                         <h5>{pets[1].name}</h5>
-                        <p>Description:</p>
-                        <p>Breed:</p>
-                        <p>Age:</p>
-                        <p>Size:</p>
+                        <p>Description: {pets[1].about}</p>
+                        <p>Breed: {pets[1].breed} </p>
+                        <p>Age: {pets[1].age}</p>
+                        <p>Type: {pets[1].type}</p>
                         </div>
                 <div className="col-4">
                     <img className="Puppy1" src={Puppy1}/>
                         <h5>{pets[2].name}</h5>
-                        <p>Description:</p>
-                        <p>Breed:</p>
-                        <p>Age:</p>
-                        <p>Size:</p>
+                        <p>Description: {pets[2].about}</p>
+                        <p>Breed: {pets[2].breed} </p>
+                        <p>Age: {pets[2].age}</p>
+                        <p>Type: {pets[2].type}</p>
                         </div>
                 <div className="col-4">
                     <img className="adult1" src={adult1}/>
                         <h5>{pets[3].name}</h5>
-                        <p>Description:</p>
-                        <p>Breed:</p>
-                        <p>Age:</p>
-                        <p>Size:</p>
+                        <p>Description: {pets[3].about}</p>
+                        <p>Breed: {pets[3].breed} </p>
+                        <p>Age: {pets[3].age}</p>
+                        <p>Type: {pets[3].type}</p>
                         </div>
                 <div className="col-4">
                     <img className="adult2" src={adult2}/>
                         <h5>{pets[4].name}</h5>
-                        <p>Description:</p>
-                        <p>Breed:</p>
-                        <p>Age:</p>
-                        <p>Size:</p>
+                        <p>Description: {pets[4].about}</p>
+                        <p>Breed: {pets[4].breed} </p>
+                        <p>Age: {pets[4].age}</p>
+                        <p>Type: {pets[4].type}</p>
                         </div>            
                 <div className="button">
                     <button type="Book a Visit!" style={{marginBottom: '10px'}}>
