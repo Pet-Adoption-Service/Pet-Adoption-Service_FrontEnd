@@ -36,7 +36,7 @@ return <>
             <div className="row">
                 <div className="col-4">
                     <img className="kitty1" src={pets[0].profile_image}/>
-                    <h5>Name: {pets[0].name}</h5>
+                    <h5>{pets[0].name}</h5>
                     <p>Description: {pets[0].about}</p>
                     <p>Breed: {pets[0].breed}</p>
                     <p>Age: {pets[0].age}</p>
@@ -50,7 +50,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit {pets[0].name}!</h1>
+                                            <h1 class="modal-title1 fs-5" id="bookingModalLabel">Visit Cloud!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -116,7 +116,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit {pets[1].name}!</h1>
+                                            <h1 class="modal-title2 fs-5" id="bookingModalLabel">Visit Tifa!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -182,7 +182,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit {pets[2].name}!</h1>
+                                            <h1 class="modal-title3 fs-5" id="bookingModalLabel">Visit Cid!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -248,7 +248,7 @@ return <>
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit {pets[3].name}!</h1>
+                                            <h1 class="modal-title4 fs-5" id="bookingModalLabel">Visit Barrett!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -310,11 +310,11 @@ return <>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
                             Book A Visit!
                             </button>
-                            <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel2" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="bookingModalLabel">Visit {pets[4].name}!</h1>
+                                            <h1 class="modal-title5 fs-5" id="bookingModalLabel2">Visit Red V!</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
