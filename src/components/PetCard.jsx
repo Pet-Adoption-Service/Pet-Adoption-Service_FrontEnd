@@ -11,6 +11,7 @@ const PetCard = ({ pets }) => {
         <p>Breed:{pets[0].breed}</p>
         <p>Age:{pets[0].age}</p>
         </div>
+  )
 }
 
 export default PetCard

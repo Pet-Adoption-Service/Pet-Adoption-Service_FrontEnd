@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import NotFound from './components/Error'
 import Home from './components/Home'
 import About from './components/About'
 import FindAPet from './components/FindAPet'
 import Contact from './components/Contact'
 import FAQ from './components/FAQ'
-import NotFound from './components/Error'
+
 
 const App =() => {
-
 const [pets, setPets] = useState([])
 const [bookings, setBookings] = useState([])
 
@@ -38,18 +38,16 @@ useEffect(() => {
 const addBooking = async (petName, name, date, contactInfo) => { 
   const id = bookings.length
 
-
 }
 
   return <>
       <Navbar />
         <Routes>
-          <Route exact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/findapet" element={<FindAPet pets={pets} />} />
+          <Route path="/FindAPet" element={<FindAPet pets={pets} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Home />} />
         </Routes>
     </>    
 
